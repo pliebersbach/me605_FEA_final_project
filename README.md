@@ -13,3 +13,15 @@ Usage:
     ./femcod.o
     
   Follow directions as prompted and enter the mesh and problem data file name, then enter a name for an output file when prompted.
+  
+Files:
+  1. FEMCOD.f - vanilla femcod.f fea code provided for project
+  2. TwoBarData.txt - input data for simple fea mechanical analysis of a two bar truss system
+  3. isquad_full.txt - Fortran subroutine that assembles stiffness matrix for 4 node isoparamtric quad element for heat transer, using full integration
+  4. isquad_reduced.txt - Fortran subroutine that assembles stiffness matrix for 4 node isoparamtric quad element for heat transer, using reduced integration
+  5. patch.txt - input data for thermal analysis patch test, consists distorted 4 element geometry and constant temperature boundary conditions
+  6. patch2.txt - input data for thermal analysis patch test, consists 4 element geometry and constant temperature boundary conditions
+  7. plfemcod.f - femcod.f code, includes subroutine for quad element thermal analysis with full integration
+  8. plfemcod2.f - femcod.f code, include subroutine for quad element thermal analysis with reduced integration
+  9. project_2_report_pl.pdf - summarized project findings and results
+  10. quad_mesh.txt - input data for thermal analysis of plate with circular hole in the middle
